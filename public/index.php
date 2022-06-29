@@ -1,23 +1,26 @@
 <?php
 
-require _DIR_ . "../vendor/autoload.php"
+require __DIR__ . "./../vendor/autoload.php";
+$request = new \App\Http\Request();
 
-echo "<h1>Hola Mundo!</h1>";
+$request->send();
+
+//echo "<h1>Hola Mundo!</h1>";
 
 
 //con planos se contruyen casas
 
 //con class se instancian objetos
 
-use App\Comida;
+//use App\Comida;
 // instanciamos un objeto
-$objetoUno = new Comida();
-$objetoUno->precio = 5;
-$objetoUno->setNombre = "Sopa";
-echo "<p>" . $objetoUno->getNombre . "</p>";
-var_dump($objetoUno);
+//$objetoUno = new Comida();
+//$objetoUno->precio = 5;
+//$objetoUno->setNombre = "Sopa";
+//echo "<p>" . $objetoUno->getNombre . "</p>";
+//var_dump($objetoUno);
 
-$objetoTres = new Comida();
-$objetoTres->precio = 10;
-$objetoTres->setNombre = "majadito";
-var_dump($objetoTres);
+//$objetoTres = new Comida();
+//$objetoTres->precio = 10;
+//$objetoTres->setNombre = "majadito";
+//var_dump($objetoTres);
