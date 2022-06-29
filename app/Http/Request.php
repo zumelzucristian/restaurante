@@ -16,11 +16,13 @@ class Request
     public function setController($controller)
     {
         if (empty($controller)) {
-            $this->controller = "\App\Http\Controlles\HomeController";
+            $this->controller = "\App\Http\Controllers\HomeController";
+            
         } else {
-            $controller = strtolower($controller);
-            $controller = ucfirst($controller);
-            $this->controller = "\App\Http\Controlles\\" . $controller . "Controller";
+            $controller = strtolower($controller); //volver a minusculas
+            $controller = ucfirst($controller);  //la primera volver a mayuscula
+            $this->controller = "\App\Http\Controllers\\" . $controller . "Controller";
+            
         }
     }
 
